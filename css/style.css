@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header */
+
+header {
+    /*background-color: #017a9b;*/
+    background-color: yellow;
+    position: fixed;
+
+}
+
+h1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    font-family: sans-serif;
+    background-color: white;  
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #017a9b;
+}
+  
+li 
+a {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #f5fcfe;
+    font: bolder 85% sans-serif; 
+    text-align: center;
+    padding: 15px 23px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    color: #11161a;
+    background-color: #a4e4f5;
+}
+
+.active {
+    color: #11161a;
+    background-color: #53cbed;
+}
+
+/* Body */
+
+/* Body > Main */
+
+section {
+    min-height: 100vh;
+}
+
+h2 {
+    font-family: sans-serif;
+    padding: 29% 2% 2% 2%;
+}
+
+p {
+    font: 100 85% sans-serif;
+    text-align: justify;
+    line-height:160%;
+    padding: 0 2%;
+}
+
+/* Breakpoint for Header */
+
+@media (min-width: 391px) {
+
+    header {
+        width: 100%;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content:right;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    h2{
+        padding: 10% 2% 2% 2%;
+    }
+
+}
